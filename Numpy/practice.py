@@ -22,23 +22,25 @@ two_D_array = np.array([[1,2,3,4]])
 print(two_D_array.ndim)
 
 three_D_array = np.array([[['A','B','C'],[1,2,3],[1,2,3]],
-                          [['D',2,3],['F',2,3],[1,2,3]],
-                          [[1,2,3],[1,2,3],[1,2,3]]])
+                          [['D',2,3],['F',2,3],[1,'N',3]],
+                          [[1,2,3],[1,2,3],[1,2,'T']]])
 # print(three_D_array.ndim)
 print("shape is:", three_D_array.shape) # 3,3,3: layers, rows and colums in each row
 
 # To access elements in the array:, CALLED Chain indexing 
 print(three_D_array[0][0][0]) # A
 print(three_D_array[1][0][0]) # D
-print(three_D_array[0][1][0]) # F
+print(three_D_array[1][1][0]) # F
 
 # Multidimensional Idexing 
 print("using Multidimensional Idexing ",three_D_array[0,0,0]) # A
 
 # Multidimensional Indexing is faster than Chain Indexing 
 
+word = three_D_array[0,0,0] + three_D_array[1,2,1] + three_D_array[2,2,2]
+print(word)
 
 
 
 
-
+ 
