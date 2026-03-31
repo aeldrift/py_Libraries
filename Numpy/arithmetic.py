@@ -44,3 +44,21 @@ print('sum of arrays is:',array1 + array2) #sum of arrays is: [5 7 9]
 print('difference of arrays is:',array1 - array2) # difference of arrays is: [-3 -3 -3]
 print('Division of arrays is:',array1 / array2) # Division of arrays is: [0.25 0.4  0.5 ]
 print('Exponent of arrays is:',array1 ** array2) # Division of arrays is: [0.25 0.4  0.5 ]
+
+# Comparison Operators 
+scores = np.array([56,79,100,20,89])
+print(scores > 70)
+print(scores == 100)
+
+# Assume, let's assigning 0 credits to one 60having marks less than 60
+scores[scores < 60] = 0
+print("scores is:",scores)
+
+# Broadcasting
+
+array1 = np.array([[1,2,3],[4,5,6],[7,8,9]])
+array2 = np.array([[11,12,13],[14,15,16],[17,18,19]])
+print(array1.shape)
+print(array2.shape)
+print(array1 * array2)
+
