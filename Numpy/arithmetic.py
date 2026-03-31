@@ -96,7 +96,7 @@ teenagers = ages[ages < 18]
 print("ages of teenagers is:",teenagers)
 
 senior_citizens = ages[ages > 60]
-print("agea of senior citizens are:",senior_citizens)
+print("age of senior citizens are:",senior_citizens)
 
 print(ages) # Original array will not change 
 
