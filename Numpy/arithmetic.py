@@ -55,10 +55,20 @@ scores[scores < 60] = 0
 print("scores is:",scores)
 
 # Broadcasting
+''' Allows numpy to perform operations on arrays 
+with different shapes by virtually expanding dimensions 
+so they match the larger array's shape
+The dimensions have same size or 
+One of the dimensions have size of 1'''
+
 
 array1 = np.array([[1,2,3],[4,5,6],[7,8,9]])
 array2 = np.array([[11,12,13],[14,15,16],[17,18,19]])
 print(array1.shape)
 print(array2.shape)
-print(array1 * array2)
+print(array1 * array2) # possible when either dim matches or is 1
+
+# Aggregate the functions 
+# It summarises the data and typically return a single value 
+  
 
