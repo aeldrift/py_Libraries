@@ -71,5 +71,30 @@ print("start:end:step\n", array[::2]) # To acess all the indices
 print("start:end:-ve step\n", array[::-1]) # To print all the rows reversed
 print("start:end:-ve step\n", array[::-2]) # To print all the rows reversed and step every 2nd row
 
+# To print specific index value of all rows 
+print("0th index of all rows is:", array[ : ,0])
+print("2th index of all rows is:", array[ : ,2])
 
- 
+print("-1th index of all rows is:", array[ : ,-1])
+print("-3th index of all rows is:", array[ : ,-3])
+
+print(array[:, :3 ]) # will print the first three columns of all layers 
+
+print(array[:, : :2]) # will print all columns by skip step by 2 
+
+print(array[:, : :-1]) # will print all columns by skip step by 2 
+
+# the value at stepped position is actually selected not skipped 
+
+print(array[:, 1: :-1]) # will start from column idx 1 i.e.(2 6 10 14) and then due to -1 will move to left (NOT RIGHT) i.e.(1 5 9 13) and that is selected
+
+# -ve will make the move backward
+
+print(array[0:2, 0:2])
+print("dimension:",(array[0:2, 0:2]).ndim)
+print("shape:",(array[0:2, 0:2]).shape)
+
+''' For SHAPE,  n dimension array has n values in shape for example:
+3D array has 3 values and 4D array has 4 values '''
+
+
