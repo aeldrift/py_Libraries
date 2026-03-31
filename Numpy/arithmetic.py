@@ -34,3 +34,13 @@ print("value of pi is:",np.pi)
 radii = np.array([1,2,3])
 print(np.pi * radii ** 2 )
 
+# Element-wise Arithmetic 
+''' Applying operations element by element between two arrays'''
+
+array1 = np.array([1,2,3])
+array2 = np.array([4,5,6])
+
+print('sum of arrays is:',array1 + array2) #sum of arrays is: [5 7 9]
+print('difference of arrays is:',array1 - array2) # difference of arrays is: [-3 -3 -3]
+print('Division of arrays is:',array1 / array2) # Division of arrays is: [0.25 0.4  0.5 ]
+print('Exponent of arrays is:',array1 ** array2) # Division of arrays is: [0.25 0.4  0.5 ]
