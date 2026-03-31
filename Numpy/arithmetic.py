@@ -19,9 +19,18 @@ round_array = np.array([1.01,2.5,3.99]) #  1,2,4
 print("round off:", np.round(round_array))
 
 # To round up, use: ceiling 
-round_array = np.array([1.01,2.5,3.99]) #  1,2,4
+round_array = np.array([1.01,2.5,3.99]) #  2,3,4
 print("ceil:", np.ceil(round_array))
 
 # To round down, use floor 
-round_array = np.array([1.01,2.5,3.99]) #  1,2,4
+round_array = np.array([1.01,2.5,3.99]) #  1,2,3
 print("floor:", np.floor(round_array))
+
+# To return the value of pi 
+print("value of pi is:",np.pi)
+
+# Combining the scalar and the vectorised functions together
+
+radii = np.array([1,2,3])
+print(np.pi * radii ** 2 )
+
