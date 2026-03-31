@@ -70,5 +70,14 @@ print(array1 * array2) # possible when either dim matches or is 1
 
 # Aggregate the functions 
 # It summarises the data and typically return a single value 
-  
+
+array = np.array([[1,2,3],
+                 [5,6,7]])
+
+print(np.sum(array)) # 1+2+3+4+5+6+7 = 24
+print(np.mean(array))
+print(np.std(array)) # To print the standard deviation 
+print(np.var(array)) # To print the variation
+print(np.min(array))
+print(np.max(array))
 
