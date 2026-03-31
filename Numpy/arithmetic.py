@@ -95,7 +95,13 @@ ages = np.array([[21,17,19,20,16,30,18,65],
 teenagers = ages[ages < 18]
 print("ages of teenagers is:",teenagers)
 
+senior_citizens = ages[ages > 60]
+print("agea of senior citizens are:",senior_citizens)
+
 print(ages) # Original array will not change 
 
 adults = ages[(ages >= 18) & (ages < 60)] # Instead of usig and use & (i.e. Logical and)
+print("ages of adults are:",adults)
+
+adults = ages[(ages < 18) | (ages >= 60)] # Instead of usig and use & (i.e. Logical and)
 print("ages of adults are:",adults)
