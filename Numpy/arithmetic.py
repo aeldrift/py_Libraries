@@ -72,12 +72,30 @@ print(array1 * array2) # possible when either dim matches or is 1
 # It summarises the data and typically return a single value 
 
 array = np.array([[1,2,3],
-                 [5,6,7]])
+                  [5,6,7]])
 
 print(np.sum(array)) # 1+2+3+4+5+6+7 = 24
 print(np.mean(array))
 print(np.std(array)) # To print the standard deviation 
 print(np.var(array)) # To print the variation
-print(np.min(array))
-print(np.max(array))
 
+print(np.min(array)) # To print the minimum value from the array
+print(np.max(array)) # To print the maximum value from the array
+
+print(np.argmin(array)) # To print the index of min value in array
+print(np.argmax(array)) # To print the index of max value in array
+
+print(np.sum(array, axis=0)) # To print the sum of all columns individually 
+print(np.sum(array, axis=1)) # To print the sum of all rows individually
+
+# Filtering: Refers to the process of selecting elements from an array that match a given condition
+ages = np.array([[21,17,19,20,16,30,18,65],
+                 [39,22,15,99,18,19,20,71]])
+
+teenagers = ages[ages < 18]
+print("ages of teenagers is:",teenagers)
+
+print(ages) # Original array will not change 
+
+adults = ages[(ages >= 18) & (ages < 60)] # Instead of usig and use & (i.e. Logical and)
+print("ages of adults are:",adults)
