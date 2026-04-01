@@ -153,5 +153,5 @@ print("Shuffled array",array)
 
 
 fruits = np.array(["Apple", "Mango", "Banana", "Coconut", "Pineapple"])
-fruit = rng.choice(fruits) # Will choose any at random
-print(fruit)
+fruit = rng.choice(fruits, size = 9) # Will choose any at random
+print(fruit) # size doesn't matter, can select one item more than once to achieve target size
