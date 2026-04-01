@@ -105,3 +105,9 @@ print("ages of adults are:",adults)
 
 adults = ages[(ages < 18) | (ages >= 60)] # Instead of using and use & (i.e. Logical and)
 print("ages of adults are:",adults)
+
+evens = ages[ages % 2 == 0]
+print(evens)
+
+evens = ages[ages % 2 != 0]
+print(evens)
