@@ -126,4 +126,7 @@ print("random number generated is:",rng.integers(1,7)) # can pass a range and la
 
 # For readability, can use as:
 print("random number generated:",rng.integers(low=10, high= 70)) # Here, 70 is exclusive
-# size is used  to specify the no of integers/numbers to be generated
+
+# size is used  to specify the dimensions or the no of integers/numbers to be generated as:
+print("6 random number generated using size:",rng.integers(low=10, high= 70, size = 6)) # Here, 70 is exclusive
+print("random number generated specifying dimensions:\n",rng.integers(low=10, high= 70, size = (3,4)))
