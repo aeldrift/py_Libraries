@@ -121,7 +121,7 @@ print(adults)
 
 # To generate the random numbers:  like used for simulations, modelling, applying random transformations and testing purposes
 # Use Random number generator: rng: gives access to libraries random 
-rng = np.random.default_rng(seed=2)
+rng = np.random.default_rng()
 print("random number generated is:",rng.integers(1,7)) # can pass a range and last is excluded 
 
 # For readability, can use as:
@@ -131,5 +131,12 @@ print("random number generated:",rng.integers(low=10, high= 70)) # Here, 70 is e
 print("6 random number generated using size:",rng.integers(low=10, high= 70, size = 6)) # Here, 70 is exclusive
 print("random number generated specifying dimensions:\n",rng.integers(low=10, high= 70, size = (3,4)))
 
-# If want to generate the same result again, use: seed
+# If want to reproduce/generate the same results again, use: seed
 rng = np.random.default_rng(seed=1)
+
+# Different seed → different sequence
+rng1 = np.random.default_rng(seed=1)
+rng2 = np.random.default_rng(seed=1)
+
+print(rng1.integers(0, 10, 3))
+print(rng2.integers(0, 10, 3))
