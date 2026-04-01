@@ -140,3 +140,18 @@ rng2 = np.random.default_rng(seed=1)
 
 print(rng1.integers(0, 10, 3))
 print(rng2.integers(0, 10, 3))
+
+np.random.seed(seed=1)
+# Floating point number: A number with decimal portion
+print("random floating nos.",np.random.uniform(low=-1, high=1, size= (3))) # Each value have equal chance of selection
+
+rng = np.random.default_rng()
+# Shuffling the array
+array = np.array([1,2,3,4,5])
+rng.shuffle(array)
+print("Shuffled array",array)
+
+
+fruits = np.array(["Apple", "Mango", "Banana", "Coconut", "Pineapple"])
+fruit = rng.choice(fruits) # Will choose any at random
+print(fruit)
