@@ -111,3 +111,19 @@ print(evens)
 
 evens = ages[ages % 2 != 0]
 print(evens)
+
+
+# Boolean Indexing will flatten the data while creating the new array's so,
+# to preserve the original shape use 'where'
+print("The original shape of the array remains preserved") 
+adults = np.where(ages > 18, ages, 0)  # Can't add descriptive strings, as it’s meant for array operations
+print(adults)  
+
+# To generate the random numbers:  like used for simulations, modelling, applying random transformations and testing purposes
+# Use Random number generator: rng: gives access to libraries random 
+rng = np.random.default_rng()
+print("random number generated is:",rng.integers(1,7)) # can pass a range and last is excluded 
+
+# For readability, can use as:
+print("random number generated:",rng.integers(low=10, high= 70)) # Here, 70 is exclusive
+# size is used  to specify the no of integers/numbers to be generated
