@@ -1,4 +1,4 @@
-import pandas as pd
+import pandas as pd # Import pandas to use it and using pd as an anomalie
 print(pd.__version__) # To check the version of the pandas 
 
 # Series: A pandas 1-D Labeled array that can hold any data type
