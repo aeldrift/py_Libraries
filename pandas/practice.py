@@ -38,6 +38,9 @@ series.loc["c"] = 600
 
 print("series is\n",series)
 
-data= [1, 2, 3, 4]
-series = pd.Series(data, index=["a", "b", "c","d"])
-print("value at loc d is: ", series.loc["d"])
+data= [101, 202, 303, 404]
+series = pd.Series(data, index=["A", "B", "C", "D"])
+print("value at loc d is: ", series.loc["D"])
+print("value access using index no. (at index 2) is: ", series.iloc[2])
+
+print(" series no, less than 200 are: \n", series[series < 300])
