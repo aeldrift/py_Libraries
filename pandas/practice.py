@@ -50,3 +50,5 @@ calories = { "Day 1": 100, "Day 2": 200, "Day 3": 300} # dictationary with key v
 # keys will act as the labels here
 
 series = pd.Series(calories)
+print("calories on day 2 is:",series.loc["Day 2"])
+print("calories on day 2 is:",series.loc["Day 3"])
