@@ -52,3 +52,6 @@ calories = { "Day 1": 100, "Day 2": 200, "Day 3": 300} # dictationary with key v
 series = pd.Series(calories)
 print("calories on day 2 is:",series.loc["Day 2"])
 print("calories on day 2 is:",series.loc["Day 3"])
+
+series.loc["Day 3"] +=  10
+print("calories on day 2 is:",series.loc["Day 3"])
