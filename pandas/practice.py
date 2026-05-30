@@ -46,12 +46,15 @@ print("value access using index no. (at index 2) is: ", series.iloc[2])
 print(" series no, less than 200 are: \n", series[series < 300])
 
 
-calories = { "Day 1": 100, "Day 2": 200, "Day 3": 300} # dictationary with key value pairs
+calories = { "Day 1": 1000, "Day 2": 2000, "Day 3": 3000, "Day 4": 4000} # dictationary with key value pairs
 # keys will act as the labels here
 
 series = pd.Series(calories)
 print("calories on day 2 is:",series.loc["Day 2"])
 print("calories on day 2 is:",series.loc["Day 3"])
 
-series.loc["Day 3"] +=  10
+# In-place manipulation
+series.loc["Day 3"] +=  10  # can change the values as well
 print("calories on day 2 is:",series.loc["Day 3"])
+print(series[series > 2000])
+
