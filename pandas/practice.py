@@ -20,7 +20,7 @@ print(series)
 data = [False,True, True, True]  # data type: bool
 series = pd.Series(data, index = ["a","b","c","d"]) # Length of data must match index
 print(series)
-
+  
 data = [False,True, True, True]  # data type: bool
 series = pd.Series(data, index = ["apartment #1","apartment #2","apartment #3","apartment #4"]) # Length of data must match index
 print(series)
