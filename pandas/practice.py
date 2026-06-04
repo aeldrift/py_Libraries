@@ -15,7 +15,7 @@ print(series)
 data = ["A","B","d", "e"]  # data type: object 
 series = pd.Series(data)
 print(series)
-
+   
 # For specific index: 
 data = [False,True, True, True]  # data type: bool
 series = pd.Series(data, index = ["a","b","c","d"]) # Length of data must match index
