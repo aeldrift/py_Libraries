@@ -35,3 +35,6 @@ df = pd.read_csv("data.csv")
 print(df.to_string())
  
 ''' NaN = Not a number'''
+
+data_frame = pd.read_json("countries.json")
+print(data_frame)
