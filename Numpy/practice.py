@@ -96,5 +96,3 @@ print("shape:",(array[0:2, 0:2]).shape)
 
 ''' For SHAPE,  n dimension array has n values in shape for example:
 3D array has 3 values and 4D array has 4 values '''
-
-

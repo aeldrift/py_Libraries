@@ -21,6 +21,15 @@ print(df)
 
 # To add a new row
 print("Adding a new row")
-new_row = pd.DataFrame([{"Name": "Sandy",  "Age": 28, "Job": "Engineer" }, {"Name": "managaer",  "Age": 28, "Job": "Peon" }], index = ["Employee 4", "Employee 5"])
+new_row = pd.DataFrame([{"Name": "Sandy",  "Age": 28, "Job": "Engineer" }, {"Name": "managaer",  "Age": 68, "Job": "Peon" }], index = ["Employee 4", "Employee 5"])
 df = pd.concat([df, new_row])
 print(df)
+
+# importing  files
+''' CSV Files: Comma Separated files'''
+'''JSON: Javascript Object Notation'''
+
+import pandas as pd 
+
+df = pd.read_csv("data.csv")
+print(df.to_string())
