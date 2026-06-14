@@ -38,3 +38,16 @@ print(df.to_string())
 
 data_frame = pd.read_json("countries.json")
 print(data_frame)
+
+# Selection 
+df = pd.read_csv("data.csv")
+
+''' Selection by column'''
+print(df["Name"].to_string())
+
+print(df["Height"].to_string())
+
+''' df["Height"] → returns a Series
+    .to_string() → converts the entire Series/DataFrame into a string and disables truncation
+    pd.set_option("display.max_rows", None) → changes Pandas display settings globally for the session.
+    '''
